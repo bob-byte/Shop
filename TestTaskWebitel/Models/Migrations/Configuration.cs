@@ -34,45 +34,57 @@ namespace TestTaskWebitel.Migrations
             foreach (var product in products.Values)
             {
                 context.Products.AddOrUpdate(p => p.Id, product);
-                context.SaveChanges();
             }
+            context.SaveChanges();
 
-            //var orders = new List<Order>
-            //{
-            //    new Order
-            //    {
-            //        Number = "3219cedw1",
-            //        Amount = 1,
-            //        ProductOrders = new Collection<ProductOrder>
-            //        {
-            //            products["Redmi Note 5"]
-            //        }
-            //    },
-            //    new Order
-            //    {
-            //        Number = "3329cedw1",
-            //        Amount = 1,
-            //        Products = new Collection<Product>
-            //        {
-            //            products["iPhone 7"]
-            //        }
-            //    },
-            //    new Order
-            //    {
-            //        Number = "3549cedw1",
-            //        Amount = 2,
-            //        Products = new Collection<Product>
-            //        {
-            //            products["Lenovo 5300"],
-            //            products["Lenovo 5450"]
-            //        }
-            //    }
-            //};
+            var orders = new List<Order>
+            {
+                new Order
+                {
+                    Number = "3219cedw1",
+                    Amount = 1,
+                    ProductOrders = new Collection<ProductOrder>
+                    {
+                        new ProductOrder
+                        {
+                            ProductId = context.Products.First(p => p.Name == "Redmi Note 5").Id
+                        }
+                    }
+                },
+                new Order
+                {
+                    Number = "3329cedw1",
+                    Amount = 1,
+                    ProductOrders = new Collection<ProductOrder>
+                    {
+                        new ProductOrder
+                        {
+                            ProductId = context.Products.First(p => p.Name == "iPhone 7").Id
+                        }
+                    }
+                },
+                new Order
+                {
+                    Number = "3549cedw1",
+                    Amount = 2,
+                    ProductOrders = new Collection<ProductOrder>
+                    {
+                        new ProductOrder
+                        {
+                            ProductId = context.Products.First(p => p.Name == "Lenovo 5300").Id
+                        },
+                        new ProductOrder
+                        {
+                            ProductId = context.Products.First(p => p.Name == "Lenovo 5450").Id
+                        }
+                    }
+                }
+            };
 
-            //foreach (var order in orders)
-            //{
-            //    context.Orders.AddOrUpdate(order);
-            //}
+            foreach (var order in orders)
+            {
+                context.Orders.AddOrUpdate(order);
+            }
         }
     }
 

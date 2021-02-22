@@ -14,19 +14,19 @@ namespace TestTaskWebitel.Models.EntityConfigurations
         {
             ToTable("Product");
 
-            Property(product => product.Id)
+            Property(p => p.Id)
                 .HasDatabaseGeneratedOption(DatabaseGeneratedOption.Identity);
 
-            Property(product => product.Name)
+            Property(p => p.Name)
                 .IsRequired()
                 .HasMaxLength(50);
 
-            Property(product => product.Price)
+            Property(p => p.Price)
                 .HasPrecision(18, 0);
 
-            HasMany(product => product.ProductOrders)
-                .WithRequired(productOrder => productOrder.Product)
-                .HasForeignKey(productOrder => productOrder.ProductId);
+            HasMany(p => p.ProductOrders)
+                .WithRequired(po => po.Product)
+                .HasForeignKey(po => po.ProductId);
 
             //HasMany(product => product.Orders)
             //    .WithMany(order => order.Products)
