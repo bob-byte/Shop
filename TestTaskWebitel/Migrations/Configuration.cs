@@ -5,15 +5,13 @@ using System.Data.Entity.Migrations;
 using System.Linq;
 using TestTaskWebitel.Models.Domain;
 
-namespace TestTaskWebitel.Models.Migrations
+namespace TestTaskWebitel.Migrations
 {
     internal sealed class Configuration : DbMigrationsConfiguration<TestTaskWebitel.Models.ShopDbContext>
     {
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
-            MigrationsNamespace = "TestTaskWebitel.Models.Migrations";
-            MigrationsDirectory = "Models\\Migrations";
         }
 
         protected override void Seed(TestTaskWebitel.Models.ShopDbContext context)

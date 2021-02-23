@@ -1,4 +1,4 @@
-namespace TestTaskWebitel.Models.Migrations
+namespace TestTaskWebitel.Migrations
 {
     using System.Data.Entity.Migrations;
     
