@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using System.Web.Http;
 using TestTaskWebitel.Models;
 using TestTaskWebitel.Models.Domain;
+using TestTaskWebitel.Validators;
 
 namespace TestTaskWebitel.Controllers
 {
@@ -36,6 +37,14 @@ namespace TestTaskWebitel.Controllers
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
+            }
+
+            OrderValidator validations = new OrderValidator();
+            Boolean isValidProductOrder = validations.IsValidEnteredOrderId(order);
+
+            if (!isValidProductOrder)
+            {
+                return BadRequest("Entered OrderId of ProductOrders property have to be equal to Id column");
             }
 
             context.Orders.Add(order);

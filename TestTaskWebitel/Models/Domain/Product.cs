@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace TestTaskWebitel.Models.Domain
 {
-    public class Product
+    public class Product : Shop
     {
         public Product()
         {
