@@ -177,14 +177,6 @@
     <Compile Include="Models\Migrations\202102191337171_InitialModel.Designer.cs">
       <DependentUpon>202102191337171_InitialModel.cs</DependentUpon>
     </Compile>
-    <Compile Include="Models\Migrations\202102191415475_CreateRelationshipBetweenTablesProductAndOrder.cs" />
-    <Compile Include="Models\Migrations\202102191415475_CreateRelationshipBetweenTablesProductAndOrder.Designer.cs">
-      <DependentUpon>202102191415475_CreateRelationshipBetweenTablesProductAndOrder.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Migrations\202102201507370_DeleteRelationshipBetweenTablesProductAndOrder.cs" />
-    <Compile Include="Models\Migrations\202102201507370_DeleteRelationshipBetweenTablesProductAndOrder.Designer.cs">
-      <DependentUpon>202102201507370_DeleteRelationshipBetweenTablesProductAndOrder.cs</DependentUpon>
-    </Compile>
     <Compile Include="Models\Migrations\202102201635234_CreateTableProductOrder.cs" />
     <Compile Include="Models\Migrations\202102201635234_CreateTableProductOrder.Designer.cs">
       <DependentUpon>202102201635234_CreateTableProductOrder.cs</DependentUpon>
@@ -192,10 +184,6 @@
     <Compile Include="Models\Migrations\202102201841105_CreateExplicitRelationshipBetweenTablesProductAndOrder.cs" />
     <Compile Include="Models\Migrations\202102201841105_CreateExplicitRelationshipBetweenTablesProductAndOrder.Designer.cs">
       <DependentUpon>202102201841105_CreateExplicitRelationshipBetweenTablesProductAndOrder.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Migrations\202102220711390_ChangeColumnIdOfTheTableProductOrder.cs" />
-    <Compile Include="Models\Migrations\202102220711390_ChangeColumnIdOfTheTableProductOrder.Designer.cs">
-      <DependentUpon>202102220711390_ChangeColumnIdOfTheTableProductOrder.cs</DependentUpon>
     </Compile>
     <Compile Include="Models\Migrations\Configuration.cs" />
     <Compile Include="Models\Domain\Order.cs" />
@@ -292,20 +280,11 @@
     <EmbeddedResource Include="Models\Migrations\202102191337171_InitialModel.resx">
       <DependentUpon>202102191337171_InitialModel.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Models\Migrations\202102191415475_CreateRelationshipBetweenTablesProductAndOrder.resx">
-      <DependentUpon>202102191415475_CreateRelationshipBetweenTablesProductAndOrder.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Models\Migrations\202102201507370_DeleteRelationshipBetweenTablesProductAndOrder.resx">
-      <DependentUpon>202102201507370_DeleteRelationshipBetweenTablesProductAndOrder.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Models\Migrations\202102201635234_CreateTableProductOrder.resx">
       <DependentUpon>202102201635234_CreateTableProductOrder.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Models\Migrations\202102201841105_CreateExplicitRelationshipBetweenTablesProductAndOrder.resx">
       <DependentUpon>202102201841105_CreateExplicitRelationshipBetweenTablesProductAndOrder.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Models\Migrations\202102220711390_ChangeColumnIdOfTheTableProductOrder.resx">
-      <DependentUpon>202102220711390_ChangeColumnIdOfTheTableProductOrder.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

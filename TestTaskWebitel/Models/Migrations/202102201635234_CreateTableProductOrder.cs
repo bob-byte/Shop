@@ -10,7 +10,7 @@ namespace TestTaskWebitel.Models.Migrations
                 "dbo.ProductOrders",
                 c => new
                     {
-                        Id = c.Guid(nullable: false),
+                        Id = c.Guid(nullable: false, identity: true, defaultValueSql: "newsequentialid()"),
                         ProductId = c.Guid(nullable: false),
                         OrderId = c.Guid(nullable: false),
                     })
