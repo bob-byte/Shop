@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations.Schema;
+﻿using System.ComponentModel.DataAnnotations.Schema;
 using System.Data.Entity.ModelConfiguration;
-using System.Linq;
-using System.Web;
 using TestTaskWebitel.Models.Domain;
 
 namespace TestTaskWebitel.Models.EntityConfigurations
@@ -27,15 +23,6 @@ namespace TestTaskWebitel.Models.EntityConfigurations
             HasMany(p => p.ProductOrders)
                 .WithRequired(po => po.Product)
                 .HasForeignKey(po => po.ProductId);
-
-            //HasMany(product => product.Orders)
-            //    .WithMany(order => order.Products)
-            //    .Map(map =>
-            //    {
-            //        map.ToTable("ProductOrder");
-            //        map.MapLeftKey("ProductId");
-            //        map.MapRightKey("OrderId");
-            //    });
         }
     }
 }

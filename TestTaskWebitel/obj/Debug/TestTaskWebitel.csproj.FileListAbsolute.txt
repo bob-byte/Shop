@@ -201,11 +201,11 @@ D:\ASP.NET\TestTaskWebitel\TestTaskWebitel\bin\ru\System.Web.WebPages.Razor.reso
 D:\ASP.NET\TestTaskWebitel\TestTaskWebitel\obj\Debug\TestTaskWebitel.csprojAssemblyReference.cache
 D:\ASP.NET\TestTaskWebitel\TestTaskWebitel\obj\Debug\TestTaskWebitel.Models.Migrations.InitialModel.resources
 D:\ASP.NET\TestTaskWebitel\TestTaskWebitel\obj\Debug\TestTaskWebitel.Models.Migrations.CreateRelationshipBetweenTablesProductAndOrder.resources
-D:\ASP.NET\TestTaskWebitel\TestTaskWebitel\obj\Debug\TestTaskWebitel.Migrations.DeleteRelationshipBetweenTablesProductAndOrder.resources
-D:\ASP.NET\TestTaskWebitel\TestTaskWebitel\obj\Debug\TestTaskWebitel.Migrations.CreateTableProductOrder.resources
-D:\ASP.NET\TestTaskWebitel\TestTaskWebitel\obj\Debug\TestTaskWebitel.Migrations.CreateExplicitRelationshipBetweenTablesProductAndOrder.resources
 D:\ASP.NET\TestTaskWebitel\TestTaskWebitel\obj\Debug\TestTaskWebitel.csproj.GenerateResource.cache
 D:\ASP.NET\TestTaskWebitel\TestTaskWebitel\obj\Debug\TestTaskWebitel.csproj.CopyComplete
 D:\ASP.NET\TestTaskWebitel\TestTaskWebitel\obj\Debug\TestTaskWebitel.dll
 D:\ASP.NET\TestTaskWebitel\TestTaskWebitel\obj\Debug\TestTaskWebitel.pdb
-D:\ASP.NET\TestTaskWebitel\TestTaskWebitel\obj\Debug\TestTaskWebitel.Migrations.ChangeColumnIdOfTheTableProductOrder.resources
+D:\ASP.NET\TestTaskWebitel\TestTaskWebitel\obj\Debug\TestTaskWebitel.Models.Migrations.DeleteRelationshipBetweenTablesProductAndOrder.resources
+D:\ASP.NET\TestTaskWebitel\TestTaskWebitel\obj\Debug\TestTaskWebitel.Models.Migrations.CreateTableProductOrder.resources
+D:\ASP.NET\TestTaskWebitel\TestTaskWebitel\obj\Debug\TestTaskWebitel.Models.Migrations.CreateExplicitRelationshipBetweenTablesProductAndOrder.resources
+D:\ASP.NET\TestTaskWebitel\TestTaskWebitel\obj\Debug\TestTaskWebitel.Models.Migrations.ChangeColumnIdOfTheTableProductOrder.resources

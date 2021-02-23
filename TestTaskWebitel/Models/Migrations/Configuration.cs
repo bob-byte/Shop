@@ -1,28 +1,23 @@
-namespace TestTaskWebitel.Migrations
-{
-    using System;
-    using System.Collections.Generic;
-    using System.Collections.ObjectModel;
-    using System.Data.Entity;
-    using System.Data.Entity.Migrations;
-    using System.Linq;
-    using TestTaskWebitel.Models.Domain;
+using System;
+using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.Data.Entity.Migrations;
+using System.Linq;
+using TestTaskWebitel.Models.Domain;
 
+namespace TestTaskWebitel.Models.Migrations
+{
     internal sealed class Configuration : DbMigrationsConfiguration<TestTaskWebitel.Models.ShopDbContext>
     {
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
-            //MigrationsNamespace = "TestTaskWebitel.Models.Migrations";
+            MigrationsNamespace = "TestTaskWebitel.Models.Migrations";
             MigrationsDirectory = "Models\\Migrations";
         }
 
         protected override void Seed(TestTaskWebitel.Models.ShopDbContext context)
         {
-            //  This method will be called after migrating to the latest version.
-
-            //  You can use the DbSet<T>.AddOrUpdate() helper extension method 
-            //  to avoid creating duplicate seed data.
             var products = new Dictionary<String, Product>
             {
                 {"Redmi Note 5", new Product{Name = "Redmi Note 5", Price = 400} },
@@ -43,39 +38,45 @@ namespace TestTaskWebitel.Migrations
                 {
                     Number = "3219cedw1",
                     Amount = 1,
+
                     ProductOrders = new Collection<ProductOrder>
                     {
                         new ProductOrder
                         {
-                            ProductId = context.Products.First(p => p.Name == "Redmi Note 5").Id
+                            ProductId = context.Products.Single(p => p.Name == "Redmi Note 5").Id
                         }
                     }
                 },
+
                 new Order
                 {
                     Number = "3329cedw1",
                     Amount = 1,
+
                     ProductOrders = new Collection<ProductOrder>
                     {
                         new ProductOrder
                         {
-                            ProductId = context.Products.First(p => p.Name == "iPhone 7").Id
+                            ProductId = context.Products.Single(p => p.Name == "iPhone 7").Id
                         }
                     }
                 },
+
                 new Order
                 {
                     Number = "3549cedw1",
                     Amount = 2,
+
                     ProductOrders = new Collection<ProductOrder>
                     {
                         new ProductOrder
                         {
-                            ProductId = context.Products.First(p => p.Name == "Lenovo 5300").Id
+                            ProductId = context.Products.Single(p => p.Name == "Lenovo 5300").Id
                         },
+
                         new ProductOrder
                         {
-                            ProductId = context.Products.First(p => p.Name == "Lenovo 5450").Id
+                            ProductId = context.Products.Single(p => p.Name == "Lenovo 5450").Id
                         }
                     }
                 }
@@ -87,14 +88,4 @@ namespace TestTaskWebitel.Migrations
             }
         }
     }
-
-    //public class ShopDbInitializer : DropCreateDatabaseAlways<ShopDbContext>
-    //{
-    //    protected override void Seed(ShopDbContext context)
-    //    {
-            
-
-    //        base.Seed(context);
-    //    }
-    //}
 }

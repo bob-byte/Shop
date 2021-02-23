@@ -1,9 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.Data.Entity.ModelConfiguration;
-using System.Linq;
-using System.Web;
 
 namespace TestTaskWebitel.Models.Domain
 {
