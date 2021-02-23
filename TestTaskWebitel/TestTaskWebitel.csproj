@@ -175,7 +175,6 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\Domain\ProductOrder.cs" />
-    <Compile Include="Models\Domain\Shop.cs" />
     <Compile Include="Models\EntityConfigurations\ProductOrderConfiguration.cs" />
     <Compile Include="Migrations\202102191337171_InitialModel.cs" />
     <Compile Include="Migrations\202102191337171_InitialModel.Designer.cs">
@@ -199,7 +198,6 @@
     <Compile Include="Validators\OrderValidator.cs" />
     <Compile Include="Validators\ProductOrdersValidator.cs" />
     <Compile Include="Validators\ProductValidator.cs" />
-    <Compile Include="Validators\ShopValidator.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Areas\HelpPage\HelpPage.css" />

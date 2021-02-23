@@ -1,9 +1,6 @@
 ﻿using FluentValidation;
 using FluentValidation.Results;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using TestTaskWebitel.Models.Domain;
 
 namespace TestTaskWebitel.Validators
@@ -19,6 +16,7 @@ namespace TestTaskWebitel.Validators
         public Boolean IsValid(ProductOrder productOrder)
         {
             ValidationResult validProductOrders = Validate(productOrder);
+
             return validProductOrders.IsValid;
         }
     }
