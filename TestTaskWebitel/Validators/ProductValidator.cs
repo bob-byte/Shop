@@ -9,13 +9,14 @@ namespace TestTaskWebitel.Validators
     {
         public ProductValidator()
         {
-            When(c => c.ProductOrders != null, () =>
-            {
-                RuleForEach(c => c.ProductOrders).Custom((productOrder, context) =>
-                {
-                    RuleFor(c => c.Id).Equal(productOrder.ProductId);
-                });
-            });
+            //It is commented out to increase productivity
+            //When(c => c.ProductOrders != null, () =>
+            //{
+            //    RuleForEach(c => c.ProductOrders).Custom((productOrder, context) =>
+            //    {
+            //        RuleFor(c => c.Id).Equal(productOrder.ProductId);
+            //    });
+            //});
         }
 
         //It has an exception
